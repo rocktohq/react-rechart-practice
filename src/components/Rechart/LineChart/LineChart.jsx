@@ -1,4 +1,4 @@
-import { Bar, BarChart, LineChart as LChart, Line, Tooltip, XAxis, YAxis } from 'recharts';
+import { LineChart as LChart, Line, Tooltip, XAxis, YAxis } from 'recharts';
 import PropTypes from 'prop-types';
 
 const LineChart = ({ data }) => {
@@ -10,9 +10,6 @@ const LineChart = ({ data }) => {
         <Tooltip></Tooltip>
         <XAxis dataKey="name"></XAxis>
         <YAxis dataKey="price"></YAxis>
-        <BarChart width={150} height={40} data={data}>
-          <Bar dataKey="price" fill="#8884d8" />
-        </BarChart>
       </LChart>
       <h2 className="text-center text-3xl font-bold">LineChart</h2>
     </div>
