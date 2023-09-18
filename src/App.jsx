@@ -1,3 +1,4 @@
+import Header from "./components/Header/Header";
 import AreaChart from "./components/Rechart/AreaChart/AreaChart";
 import BarChart from "./components/Rechart/BarChart/BarChart";
 import LineChart from "./components/Rechart/LineChart/LineChart";
@@ -14,11 +15,14 @@ export default function App() {
 
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-screen-xl my-12 gap-10 px-2">
-      <LineChart data={data}></LineChart>
-      <BarChart data={data}></BarChart>
-      <PieChart data={data}></PieChart>
-      <AreaChart data={data}></AreaChart>
-    </div>
+    <>
+      <Header></Header>
+      <main className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-screen-xl my-12 gap-10 px-2">
+        <LineChart data={data}></LineChart>
+        <BarChart data={data}></BarChart>
+        <PieChart data={data}></PieChart>
+        <AreaChart data={data}></AreaChart>
+      </main>
+    </>
   )
 }
