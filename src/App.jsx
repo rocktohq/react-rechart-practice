@@ -1,3 +1,4 @@
+import AreaChart from "./components/Rechart/AreaChart/AreaChart";
 import BarChart from "./components/Rechart/BarChart/BarChart";
 import LineChart from "./components/Rechart/LineChart/LineChart";
 import PieChart from "./components/Rechart/PieChart/PieChart";
@@ -17,6 +18,7 @@ export default function App() {
       <LineChart data={data}></LineChart>
       <BarChart data={data}></BarChart>
       <PieChart data={data}></PieChart>
+      <AreaChart data={data}></AreaChart>
     </div>
   )
 }
