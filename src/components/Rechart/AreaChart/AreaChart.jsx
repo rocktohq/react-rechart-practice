@@ -31,8 +31,8 @@ export default function AreaChart() {
           </linearGradient>
         </defs>
         <Area dataKey="price" type="bump" stroke="gray" fill="url(#splitColor)"></Area>
-        <XAxis></XAxis>
-        <YAxis></YAxis>
+        <XAxis dataKey="name"></XAxis>
+        <YAxis dataKey="price"></YAxis>
         <Tooltip></Tooltip>
       </AChart>
       <h2 className="text-center text-3xl font-bold">AreaChart</h2>
