@@ -21,7 +21,7 @@ export default function Header() {
           <img src={Logo} alt="Logo" />
           <h1 className="text-4xl font-bold uppercase"><span className="text-primary">Lo</span><span>go</span></h1>
         </figure>
-        <ul className={`${isOpen ? "flex flex-col absolute top-24 right-5 bg-base-200 rounded-md px-10 py-5 shadow-lg z-50" : "hidden md:flex -top-60 right-5"} md:flex justify-around items-center gap-5`}>
+        <ul className={`md:flex duration-1000 md:flex-row justify-around items-center gap-5 absolute md:static ${isOpen ? "flex-col top-24 right-5 bg-base-200 md:bg-transparent rounded-md px-10 py-5 shadow-lg md:shadow-none z-50" : "hidden md:flex -top-60 right-5"} `}>
           {navLinks.map((navLink, idx) => <li className="text-xl font-semibold hover:text-primary duration-500 btn-ghost px-3 py-2 rounded-md" key={idx}><a href={navLink.path}>{navLink.name}</a></li>)}
         </ul>
         <div className="flex justify-center items-center gap-2">
